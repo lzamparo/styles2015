@@ -1,9 +1,9 @@
-# styles2015
+# Styles 2016
 Software used to classify and score screens for Styles 2015
 
 ## Project layout
 
-    thymus
+    styles2016
     |
     |- data/          # contains the training set for the foci classifier.
     |
