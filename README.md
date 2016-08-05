@@ -23,6 +23,6 @@ N.B: If you cannot get the libsvm bindings to work, you may need to follow the i
     |
     |- data/          # contains the training set for the foci classifier.
     |
-    |- src/           # source code for the foci classifier, B-score normalization.
+    |- src/           # source code for the foci classifier.
     |
     |- models/        # .mat model file of the classifier used to score screens.
