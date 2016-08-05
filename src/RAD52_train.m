@@ -5,15 +5,11 @@
 path('./libsvm-mat-3.0-1-savesvm',path);
 
 % Load the data, as well as the training set.
-training_index_classes = dlmread('../data/Foci_Training_Final_Edited_08_21_09_Removed_Image1.csv',',',1,0);
-training_data_superset = dlmread('../data/SQL_2_380_object.CSV',',');
+training_set = dlmread('../data/training_set.csv',',');
 
-
-% Extracts the training data.
-[training_data,training_classes] = extractTraining(training_index_classes,training_data_superset);
-
-% Collate the training data classes with the instances
-%[training_data,index,Lindex,training_classes] = collateData(training_index_classes,training_data_superset);
+% Extracts the training data, labels.
+training_data = training_set(:,2:917);
+training_classes = training_set(:,1);
 
 % Perform the feature selection
 features = rankFeatures(training_data,training_classes,0.001);
