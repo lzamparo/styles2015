@@ -8,9 +8,12 @@ To run the classifier, you will need:
 
 Unzip the training set by running `gunzip data/training_set.csv.gz` 
 
-To train the classifier, run `src/RAD52_train.m`
+To train the classifier:
+- run `src/RAD52_train.m` in a Matlab session
+- Or from the command line, run `matlab -nosplash -nodesktop -r src/RAD52_train.m`
 
-To train the model and produce a ROC figure on held out training data, run `src/trainingRoc.m`
+To train the model and produce a ROC figure on held out training data:
+- run `src/trainingRoc.m` in a Matlab session
 
 N.B: If you cannot get the libsvm bindings to work, you may need to follow the instructions in `libsvm-mat-3.0-1/README`
 
