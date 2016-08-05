@@ -12,7 +12,7 @@ To train the model and produce a ROC figure on held out training data, run `src/
 
 N.B: If you cannot get the libsvm bindings to work, you may need to follow the instructions in `libsvm-mat-3.0-1/README`
 
-## Project layout
+### Repository layout
 
     styles2016
     |
